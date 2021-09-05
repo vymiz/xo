@@ -9,10 +9,9 @@ def check_input(s):
         print('недопустимый символ ввода')
         return (False)
 
-def play_field_draw():
-    print('''так выглядит наше игровое поле
-      0 1 2
-    0 _ _ _
-    1 _ _ _
-    2 _ _ _
-    ''')
+def play_field_draw(f):
+    for i in range(4):
+        print(end=' ')
+        for j in range(4):
+            print(f[i][j], end=' ')
+        print('\n')

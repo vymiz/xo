@@ -11,6 +11,10 @@ while xo == False:
     xo = input('Введи символ: ')
     xo = func.check_input(xo)
 
-func.play_field_draw()
+field = [[' ',0,1,2],[0,'-','-','-'],[1,'-','-','-'],[2,'-','-','-']] # an empty game field
+print('так выглядит наше игровое поле\n')
+func.play_field_draw(field)
+
+#
 
 
