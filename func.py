@@ -1,12 +1,18 @@
 # проверям какой символ был введен
 
-def test():
-    print('test import')
-
 def check_input(s):
     allowed = 'xoXO'
     if s in allowed:
-        return(s.upper())
+        s = s.upper()
+        return(s)
     else:
         print('недопустимый символ ввода')
-        return (None)
+        return (False)
+
+def play_field_draw():
+    print('''так выглядит наше игровое поле
+      0 1 2
+    0 _ _ _
+    1 _ _ _
+    2 _ _ _
+    ''')
