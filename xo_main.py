@@ -49,8 +49,6 @@ while game:
         continue
     else:
         f[r][c] = xo
-    print(xo_arr)
-    print(f_ctr)
     func.play_field_draw(f)
     game = func.win_check(f, win, xo_arr, xo, game, xo, xo_)
     if game == False:
@@ -62,8 +60,6 @@ while game:
     f, r_, c_, f_ctr, xo_arr_ = func.rand_smb(f, xo_, f_ctr, xo_arr_)
 
     func.play_field_draw(f)
-    print(xo_arr_)
-    print(f_ctr)
     game = func.win_check(f, win, xo_arr_, xo_, game, xo, xo_)
 
     if game == False:
